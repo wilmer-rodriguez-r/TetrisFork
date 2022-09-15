@@ -1,4 +1,9 @@
 # Parcial_CVDS
+
+## Autores
+  ### - Daniel Ochoa
+  ### - Wilmer Rodríguez
+
 ## 1. GIT
   ### - Fork
   - El repositorio que vamos a trabajar se encuentra en el siguiente link de [GITHUB](https://github.com/DanielOchoa1214/Tetris.git)
@@ -223,7 +228,7 @@ public class HangmanDefaultFactoryMethod extends HangmanFactoryMethod {
     }
     
   ```
-  ## - GIT (add, commit, push)
+  ## 3. GIT (add, commit, push)
   - Despues de haber hecho los cambios propuestos debemos hacer commit del trabajo hecho al repositorio remoto.
     1. Se agregan todas las modificaciones hechas con add
     
