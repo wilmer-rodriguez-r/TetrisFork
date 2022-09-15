@@ -49,7 +49,7 @@ public class AcceleratedBoard extends Board implements Serializable {
     }
 
     /**
-     * Acelera el movimiento de las piesas hacia abajo
+     * Acelera el movimiento de las piezas hacia abajo
      */
     private void speedUp(){
         TimerTask increaseVelocity = new TimerTask() {

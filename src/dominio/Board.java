@@ -140,7 +140,7 @@ public abstract class Board implements Serializable {
     }
 
     /**
-     * Metodo que mueve la piesa hacia derecha
+     * Metodo que mueve la pieza hacia derecha
      */
     public void movePieceRight(){
         if(canMove('R') && !paused){

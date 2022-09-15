@@ -1,9 +1,11 @@
 package pruebas;
 
 import dominio.*;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+//import org.testng.annotations.Test;
 import presentacion.TetrisGUI;
 
 import static org.junit.Assert.*;
@@ -13,11 +15,11 @@ import java.io.Serializable;
 
 public class TetrisMatchTest implements Serializable{
 
-    TetrisMatch matchHumanVsPc = new TetrisMatch(1, 1, "dominio.SlowBoard", "dominio.Noob");
-    TetrisMatch matchHumanVsHuman = new TetrisMatch(2, 0, "dominio.SlowBoard", "dominio.Noob");
-    TetrisMatch matchHumanVsExpertPc = new TetrisMatch(1, 1, "dominio.SlowBoard", "dominio.Expert");
+    TetrisMatch matchHumanVsPc;
+    TetrisMatch matchHumanVsHuman;
+    TetrisMatch matchHumanVsExpertPc;
 
-    @BeforeEach
+    @Before
     public void prepareTests(){
         matchHumanVsPc = new TetrisMatch(1, 1, "dominio.SlowBoard", "dominio.Noob");
         matchHumanVsHuman = new TetrisMatch(2, 0, "dominio.SlowBoard", "dominio.Noob");
@@ -223,7 +225,7 @@ public class TetrisMatchTest implements Serializable{
         TetrisGUI.User = "Gerber";
         player = new HumanPlayer("dominio.SlowBoard");
         assertEquals(player.getBackgroundColor(), new Color(153, 0, 0));
-        TetrisGUI.User = "SuperJose";
+        TetrisGUI.User = "Federico";
         player = new HumanPlayer("dominio.SlowBoard");
         assertEquals(player.getBackgroundColor(), new Color(0, 0, 153));
     }
